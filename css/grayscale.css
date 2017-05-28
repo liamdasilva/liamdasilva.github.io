@@ -55,8 +55,11 @@ a {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
-  font-family: PragmaticaExtraLight, sans-serif;
-  background-color: #010814; }
+  font-family: Gotham-Light, sans-serif;
+  background-color: #010814;
+  text-shadow: 1px 1px 2px #000000,
+             0px 6px 10px #000000,
+             0px 10px 15px #000000;}
   .navbar-custom .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
@@ -64,7 +67,7 @@ a {
     .navbar-custom .navbar-toggle:focus, .navbar-custom .navbar-toggle:active {
       outline: none; }
   .navbar-custom .navbar-brand {
-    font-weight: 700; }
+    /*font-weight: 700;*/ }
     .navbar-custom .navbar-brand:focus {
       outline: none; }
   .navbar-custom a {
@@ -131,7 +134,7 @@ a {
       .intro .intro-body .brand-heading {
         font-size: 100px; }
       .intro .intro-body .intro-text {
-        font-size: 26px; } }
+        font-size: 26px;} }
 
 .btn-circle {
   width: 70px;
@@ -227,7 +230,7 @@ a {
     margin-top: 250px; } }
 .btn {
   text-transform: uppercase;
-  font-family: PragmaticaExtraLight, sans-serif;
+  font-family: Gotham-Light, sans-serif;
   font-weight: 400;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
