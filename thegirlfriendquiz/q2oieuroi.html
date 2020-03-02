@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>The Girlfriend Quiz</title>
+    <script>
+     
+
+    </script>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/grayscale.css" rel="stylesheet">
+
+    <style type="text/css">
+
+        @font-face {
+            font-family: 'PragmaticaExtraLight';
+            src: url('fonts/PragmaticaExtraLight.otf') format("opentype");
+        }
+
+        @font-face {
+            font-family: 'PragmaticaLight';
+            src: url('fonts/PragmaticaLight.otf'); 
+        }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    The Girlfriend Quiz
+                </a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- About Section -->
+    <section id="gallery" class="container content-section">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
+                <img src="../img/questions/2.JPG" class="img-responsive"></img>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4 text-center">
+                    <br><br>
+                    <h2>Question 2</h2>
+                    <p>How many best friends did Liam claim he had?</p>
+
+                    <form action="#" onsubmit="validate(this);">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Answer</label>
+                        <input type="text" class="form-control" id="answer" placeholder="Enter answer">
+                        <small id="emailHelp" class="form-text text-muted">Hint: in word form!</small>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function validate(theForm) {
+            answer = theForm.answer.value;
+            if (answer == "") {
+                alert("Type something!")
+            } else if (answer.toLowerCase() == "three") {
+                window.location.replace("q3ewryiue.html?#");
+            } else {
+                window.location.replace("tryagain.html");
+
+            }
+        }
+    </script>
+
+    <section id="about" class="container content-section text-center">
+
+    </section>
+
+<br> <br><br><br>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>For Fern <i class="fa fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    
+    <!-- Custom Fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</body>
+
+</html>
