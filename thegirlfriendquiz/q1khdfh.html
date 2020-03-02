@@ -10,7 +10,7 @@
 
     <title>The Girlfriend Quiz</title>
     <script>
-     
+
 
     </script>
     <link rel="icon" href="img/favicon.png" type="image/png">
@@ -22,7 +22,6 @@
     <link href="../css/grayscale.css" rel="stylesheet">
 
     <style type="text/css">
-
         @font-face {
             font-family: 'PragmaticaExtraLight';
             src: url('fonts/PragmaticaExtraLight.otf') format("opentype");
@@ -30,7 +29,7 @@
 
         @font-face {
             font-family: 'PragmaticaLight';
-            src: url('fonts/PragmaticaLight.otf'); 
+            src: url('fonts/PragmaticaLight.otf');
         }
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -63,27 +62,29 @@
     <!-- About Section -->
     <section id="gallery" class="container content-section">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
+            <div
+                class="col-lg-5 col-md-5 col-sm-5 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-2 col-xs-8 text-center">
                 <img src="../img/1.JPG" class="img-responsive"></img>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4 text-center">
-                    <br><br>
+                <div
+                    class="col-lg-5 col-md-5 col-sm-5 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-2 col-xs-8 text-center">
                     <h2>Question 1</h2>
-                    <p>What is the first name of the person that Liam went on a photoshoot with to make this website back in 2014?</p>
+                    <p>What is the first name of the person that Liam went on a photoshoot with to make this website
+                        back in 2014?</p>
 
                     <form action="" onsubmit="validate(this);">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Answer</label>
-                        <input type="text" class="form-control" id="answer" placeholder="Enter answer">
-                        <small id="emailHelp" class="form-text text-muted">Hint: it was one of his roommates at Regina Street.</small>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Answer</label>
+                            <input autofocus type="text" class="form-control" id="answer" placeholder="Enter answer">
+                            <small id="emailHelp" class="form-text text-muted">Hint: it was one of his roommates at
+                                Laurier.</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
 
                 </div>
             </div>
-        </div>
 
     </section>
 
@@ -91,7 +92,7 @@
         function validate(theForm) {
             answer = theForm.answer.value;
             if (answer == "") {
-                
+
             }
             else if (answer.toLowerCase() == "brandon") {
                 window.location.replace("q2oieuroi.html?#")
@@ -105,7 +106,7 @@
 
     </section>
 
-<br> <br><br><br>
+    <br> <br><br><br>
     <!-- Footer -->
     <footer>
         <div class="container text-center">
@@ -124,7 +125,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
-    
+
     <!-- Custom Fonts -->
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
