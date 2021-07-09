@@ -73,13 +73,13 @@
                     <h2>Question 8</h2>
                     <p>What is Liam's number 1 love language?</p>
 
-                    <form action="#" onsubmit="validate(this);">
+                    <form action="">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Answer</label>
                             <input autofocus type="text" class="form-control" id="answer" placeholder="Enter answer">
                             <small id="emailHelp" class="form-text text-muted">Hint: spaces are required!</small>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
                     </form>
 
                 </div>
@@ -89,17 +89,19 @@
     </section>
 
     <script>
-        function validate(theForm) {
-            answer = theForm.answer.value;
+        var btn = document.querySelector("#submit")
+
+        btn.addEventListener("click", function(e){
+            e.preventDefault();
+            answer = document.querySelector("#answer").value
             if (answer == "") {
-                alert("Type something!")
-            } else if (answer.toLowerCase() == "quality time") {
-                window.location.replace("q9iknsdf.html?#");
+            }
+            else if (answer.toLowerCase() == "quality time") {
+                window.location.replace("q9iknsdf.html")
             } else {
                 window.location.replace("tryagain.html");
-
             }
-        }
+        }); 
     </script>
 
     <section id="about" class="container content-section text-center">

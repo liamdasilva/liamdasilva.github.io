@@ -73,14 +73,14 @@
                     <h2>Question 6</h2>
                     <p>What's the name of Liam's third double cousin, aka his former twin?</p>
 
-                    <form action="#" onsubmit="validate(this);">
+                    <form action="">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Answer</label>
                             <input autofocus type="text" class="form-control" id="answer" placeholder="Enter answer">
                             <small id="emailHelp" class="form-text text-muted">Hint: its one of the books in the
                                 Gospel!</small>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
                     </form>
 
                 </div>
@@ -90,17 +90,19 @@
     </section>
 
     <script>
-        function validate(theForm) {
-            answer = theForm.answer.value;
+        var btn = document.querySelector("#submit")
+
+        btn.addEventListener("click", function(e){
+            e.preventDefault();
+            answer = document.querySelector("#answer").value
             if (answer == "") {
-                alert("Type something!")
-            } else if (answer.toLowerCase() == "matthew") {
-                window.location.replace("q7ldfkn.html?#");
+            }
+            else if (answer.toLowerCase() == "matthew") {
+                window.location.replace("q7ldfkn.html")
             } else {
                 window.location.replace("tryagain.html");
-
             }
-        }
+        }); 
     </script>
 
     <section id="about" class="container content-section text-center">
